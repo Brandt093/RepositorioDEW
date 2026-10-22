@@ -6,7 +6,7 @@ class Futbolista{
     }
 
     calcularSalario():number{
-        if(this.sueldoBase<2000){
+        if(this.sueldoBase<2000 || this.sueldoBase == undefined){
         this.sueldoBase = 2000;        
         }return this.sueldoBase;
     }
@@ -58,3 +58,9 @@ const nuevoPortero = new portero("Courtois", 31, 1, 30, 2200);
 nuevoPortero.pararPenalti();
 console.log(nuevoPortero.obtenerFicha());
 console.log("Salario Ajustados: " + nuevoPortero.calcularSalario());
+//RECUERDEN 
+//Compilar el proyecto  npx  tsc -p .  
+//Compilar poryecto tsc -p  .
+//Compilar un fichero tsc 01ejemplo.ts
+
+//EJECUTA  node 02LibreriaFecha.js
